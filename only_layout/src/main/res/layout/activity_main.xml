@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow">
+        <ImageView
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="0dp"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:background="@color/yellow" />
+        <ImageView
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="0dp"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:background="@color/green" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0">
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="320dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="190dp"
+            android:background="@color/red"
+            android:id="@+id/imageView"/>
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="140dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="355dp"
+            android:background="@color/yellow"
+            android:layout_gravity="bottom" />
+
+    </TableRow>
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="320dp"
+        android:background="#ffdf88"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageView2" />
+
+    <ImageView
+        android:layout_column="0"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:background="@color/blue"
+        android:layout_marginStart="97dp"
+        android:contentDescription=""
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tableRow"
+        android:layout_toStartOf="@+id/imageView2" />
+
+</RelativeLayout>
